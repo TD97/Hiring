@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark success-color rounded">
+    <!-- Brand -->
+    <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+      id="logo"><B>HIREMEE</B></a>
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link p-3"> <i class="fa fa-briefcase"></i> Dashboard</a>
+      </li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              {{username2}}
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" routerLink="/rec"> Profile</a></li>
+              <li><a class="dropdown-item" routerLink="/post">POst Jobs</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+            </ul>
+          </div>
+  
+      <li class="nav-item">
+        <a  style="cursor: pointer;" class="nav-link p-3"(click)="Logout()"> <i class="fa fa-sign-out"></i> Logout</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+<div class="container mt-2 dashboard">
+         <!-- <nav>
+              <button class="btn btn-info btn-lg m-1" (click)="Seeker()">Seekers</button>
+              <button class="btn btn-info btn-lg m-1" (click)="Jobed()">POSTED JOBS</button>
+              <button class="btn btn-info btn-lg m-1"(click)="Called()" >Candidates Called for interview</button>
+
+          </nav>-->
+  <router-outlet></router-outlet>
+</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Hello{{username2}}</h1>
+    <p class="lead"> 
+      <button class="btn btn-primary btn-lg" (click)="Jobed()">POSTED JOBS</button>---->
+      <button class="btn btn-secondary btn-lg" (click)="Seeker()">Seekers</button>---->
+
+      <button class="btn btn-warning btn-lg"(click)="Called()" >Candidates Called for interview</button>----->
+      <button class="btn btn-info btn-lg"routerLink="/pass" >Candidates Passed Interview</button>----->
+      <button class="btn btn-success btn-lg"routerLink="/bcv" >Hire</button>
+
+
+
+
+
+    </p>
+  </div>
+</div>

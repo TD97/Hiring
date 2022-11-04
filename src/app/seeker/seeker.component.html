@@ -1,0 +1,203 @@
+<div class="container-fluid">
+    <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark danger-color rounded">
+      <!-- Brand -->
+      <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+        id="logo"><B>HIREMEE</B></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a routerLink="/dash" class="nav-link p-3"> <i class="fa fa-briefcase"></i> Dashboard</a>
+        </li>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                {{username2}}
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" routerLink="/rec">Profile</a></li>
+                <li><a class="dropdown-item" routerLink="/post">POst Jobs</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </div>
+    
+        <li class="nav-item">
+          <a  style="cursor: pointer;" class="nav-link p-3" (click)="Logout()"> <i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+
+            <th scope="col">Username</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Skills</th>
+            <th scope="col">Action</th>
+
+
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of seekersInfo">
+            <td>{{data.id}}</td>
+
+        <td>{{data.username}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.skills}}</td>
+        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Application screening</button></td>
+
+        <td><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Shorlist</button></td>
+        <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Reject</button></td>
+
+        </tr>
+    </tbody>
+</table> 
+<!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Add Required details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formval">
+              <div class="mb-3">
+                <label for="firstName" class="form-label">CompanyName</label>
+                <input type="text" class="form-control" id="cname" aria-describedby="emailHelp"formControlName="company">
+              </div>
+
+  
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"formControlName="name">
+                </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label">UserName</label>
+                  <input type="text" class="form-control" id="lastname"formControlName="user">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email"formControlName="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="date" class="form-label">Interview date</label>
+                    <input type="date" class="form-control" id="phone"formControlName="date">
+                  </div>
+                  <div class="mb-3">
+                    <label for="venue" class="form-label">Interview venue</label>
+                    <input type="text-area" class="form-control" id="phone"formControlName="venue">
+                  </div>
+
+  
+  
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"(click)="postCandidateDetails()">Callforinterview</button>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Reason for rejection</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formval1">
+  
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"formControlName="name">
+                </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label">UserName</label>
+                  <input type="text" class="form-control" id="lastname"formControlName="user">
+                </div>
+                  <div class="mb-3">
+                    <label for="venue" class="form-label">Reason of rejection</label>
+                    <input type="text-area" class="form-control" id="reject"formControlName="reject">
+                  </div>
+                  <div class="mb-3">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text-area" class="form-control" id="company"formControlName="company">
+                  </div>
+
+
+  
+  
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"(click)="reject()">Rejected</button>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Reason for rejection</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formval2">
+  
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"formControlName="name">
+                </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label">UserName</label>
+                  <input type="text" class="form-control" id="lastname"formControlName="user">
+                </div>
+                  <div class="mb-3">
+                    <label for="venue" class="form-label">Application under screening</label>
+                    <input type="text-area" class="form-control" id="reject"formControlName="screening">
+                  </div>
+                  <div class="mb-3">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text-area" class="form-control" id="company"formControlName="company">
+                  </div>
+
+
+  
+  
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"(click)="screen()">Screen</button>
+            
+
+
+
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+

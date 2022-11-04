@@ -1,0 +1,633 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Mahesh ",
+      "lastname": "Biswas",
+      "email": "Mahesh Biswas@gmail.com",
+      "phone": 9878765653
+    }
+  ],
+  "comments": [
+    {
+      "company": "TDZensar",
+      "password": "zensar",
+      "email": "t.das@zensar.com",
+      "job": "java dev",
+      "exp": 2,
+      "id": 1
+    },
+    {
+      "company": "zens",
+      "password": "bultu",
+      "email": "t.das@zensar.com",
+      "job": "full stack java",
+      "exp": 2,
+      "id": 3
+    },
+    {
+      "company": "HCL",
+      "password": "HCL1234",
+      "email": "hcl@outlook.com",
+      "job": "Junior dev",
+      "exp": 2,
+      "id": 4
+    },
+    {
+      "company": "Zensar Technologies Ltd",
+      "password": "zensar",
+      "email": "t.das@zensar.com",
+      "job": ".net dev",
+      "exp": 4,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "company": "PWC",
+      "password": "pwc@1234",
+      "email": "pwc@gmail.com",
+      "job": "Linux Administrator",
+      "exp": 2
+    },
+    {
+      "company": "TCS",
+      "password": "tcs@123456",
+      "email": "tcs@careers.gmail.com",
+      "job": "MBA(operations)",
+      "exp": 5,
+      "id": 7
+    },
+    {
+      "company": "Tech Mahindra",
+      "password": "tech@1234",
+      "email": "techmahindra@gmail.com",
+      "job": "Senior Developer",
+      "exp": 4,
+      "id": 8
+    },
+    {
+      "company": "Zensar",
+      "password": "zensar1234",
+      "email": "zensarcarrer@gmail.com",
+      "job": "Full stack developement",
+      "exp": 4,
+      "id": 9
+    }
+  ],
+  "signup": [
+    {
+      "username": "ST5673",
+      "password": "bultu2",
+      "mail": "vcd@gmail.com",
+      "gender": "Male",
+      "mobile": "6291010883",
+      "hometown": "Bankura",
+      "interests": [
+        "ML"
+      ],
+      "experience": 3,
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "languages": "Hindi",
+      "currentLocation": "Kolkata",
+      "lastjobexp": 1,
+      "lastjobDesig": "Sr.dev",
+      "department": "Service",
+      "reasonsforleaving": "",
+      "id": 2
+    },
+    {
+      "username": "Td66842",
+      "password": "Bultu",
+      "mail": "Trisha.uemkcse@gmail.com",
+      "gender": "Male",
+      "mobile": "6291010887",
+      "hometown": "kolkata",
+      "interests": [
+        "ML"
+      ],
+      "experience": 3,
+      "maritalStatus": "Married",
+      "nationality": "indian",
+      "languages": "bengali",
+      "currentLocation": "Kolkata",
+      "lastjobexp": 1,
+      "lastjobDesig": "Sr.dev",
+      "department": "Others",
+      "reasonsforleaving": "",
+      "id": 3
+    },
+    {
+      "username": "Tm789",
+      "password": "Bultuop",
+      "mail": "manat@gmail.com",
+      "gender": "Male",
+      "mobile": "987098867",
+      "hometown": "kolkata",
+      "interests": [
+        "IOT"
+      ],
+      "experience": 2,
+      "maritalStatus": "Single",
+      "nationality": "indian",
+      "languages": "bengali",
+      "currentLocation": "kolkata",
+      "lastjobexp": 4,
+      "lastjobDesig": "jr engineer",
+      "department": "Others",
+      "reasonsforleaving": "",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "username": "Sunil123",
+      "password": "sunil1234",
+      "mail": "sunil@gmail.com",
+      "gender": "Male",
+      "mobile": "98089765545",
+      "hometown": "Kolkata",
+      "interests": [
+        "IOT"
+      ],
+      "experience": 2,
+      "maritalStatus": "",
+      "nationality": "indian",
+      "currentLocation": "Kolkata",
+      "lastjobexp": 1,
+      "lastjobDesig": "Sr.dev",
+      "department": "Others",
+      "reasonsforleaving": ""
+    },
+    {
+      "id": 8,
+      "username": "Td66845",
+      "password": "bultu12345",
+      "mail": "td@gmail.com",
+      "gender": "Female",
+      "mobile": "9875525204",
+      "hometown": "Kolkata",
+      "interests": [
+        "WEB DEVELOPEMNT"
+      ],
+      "experience": 2,
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "currentLocation": "Kolkata",
+      "lastjobexp": 1,
+      "lastjobDesig": "jr engineer",
+      "department": "IT",
+      "reasonsforleaving": ""
+    }
+  ],
+  "login": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "username": "",
+      "email": "",
+      "name": "",
+      "skills": "",
+      "id": 6
+    },
+    {
+      "username": "",
+      "email": "",
+      "name": "",
+      "skills": "",
+      "id": 7
+    },
+    [
+      {
+        "name": "Trisha Das",
+        "email": "t.das@gmail.com",
+        "company": "PWC",
+        "username": "Td66845",
+        "skills": "Linux,devops",
+        "cv": "C:\\fakepath\\startbootstrap-sb-admin-2-gh-pages (2).zip",
+        "id": 4
+      }
+    ],
+    [
+      {
+        "name": "Trisha Das",
+        "email": "t.das@gmail.com",
+        "company": "PWC",
+        "username": "Td66845",
+        "skills": "Linux,devops",
+        "cv": "C:\\fakepath\\startbootstrap-sb-admin-2-gh-pages (2).zip",
+        "id": 4
+      }
+    ],
+    [
+      {
+        "name": "Trisha Das",
+        "email": "t.das@gmail.com",
+        "company": "PWC",
+        "username": "Td66845",
+        "skills": "Linux,devops",
+        "cv": "C:\\fakepath\\startbootstrap-sb-admin-2-gh-pages (2).zip",
+        "id": 4
+      }
+    ],
+    {
+      "id": 9
+    }
+  ],
+  "job1": [
+    [
+      {
+        "name": "Trisha Das",
+        "email": "t.das@gmail.com",
+        "company": "PWC",
+        "username": "Td66845",
+        "skills": "Linux,devops",
+        "cv": "C:\\fakepath\\startbootstrap-sb-admin-2-gh-pages (2).zip",
+        "id": 4
+      }
+    ]
+  ],
+  "job2": [
+    [
+      {
+        "name": "Trisha Das",
+        "email": "t.das@gmail.com",
+        "company": "PWC",
+        "username": "Td66845",
+        "skills": "Linux,devops",
+        "cv": "C:\\fakepath\\startbootstrap-sb-admin-2-gh-pages (2).zip",
+        "id": 4
+      }
+    ],
+    [
+      {
+        "name": "Trisha Das",
+        "email": "t.das@gmail.com",
+        "company": "PWC",
+        "username": "Td66845",
+        "skills": "Linux,devops",
+        "cv": "C:\\fakepath\\startbootstrap-sb-admin-2-gh-pages (2).zip",
+        "id": 4
+      }
+    ]
+  ],
+  "job3": [
+    {
+      "name": "Trisha Das",
+      "user": "Td66845",
+      "email": "t.das@zensar.com",
+      "date": "2022-10-13",
+      "id": 1
+    },
+    {
+      "name": "Trisha Das",
+      "user": "Td66845",
+      "email": "t.das@zensar.com",
+      "date": "2022-10-20",
+      "id": 2
+    },
+    {
+      "name": "Sunil Sharma",
+      "user": "ST5673",
+      "email": "vcd@gmail.com",
+      "date": "2022-10-19",
+      "venue": "PWC main campus",
+      "id": 3
+    },
+    {
+      "company": "PWC",
+      "name": "Trisha Das",
+      "user": "Td66845",
+      "email": "t.das@gmail.com",
+      "date": "2022-10-20",
+      "venue": "PWC main campus",
+      "id": 4
+    }
+  ],
+  "jobpost": [
+    {
+      "jobRole": "jr.dev",
+      "expRequired": "2",
+      "skills": "java,html",
+      "educationalQualifications": "btech",
+      "jobDescription": "no backlog",
+      "jobType": "Full-Time",
+      "id": 1
+    },
+    {
+      "company": "Zensar",
+      "jobRole": "Full stack developer",
+      "expRequired": "0",
+      "skills": "Full stack java",
+      "educationalQualifications": "Developer",
+      "jobDescription": "Excellent knowledge on java",
+      "jobType": "Full-Time",
+      "id": 2
+    },
+    {
+      "company": "Zensar",
+      "jobRole": "Devops Engineer",
+      "expRequired": "1-5",
+      "skills": "Devops,kubernate",
+      "educationalQualifications": "MCA",
+      "jobDescription": "good knowledge on Devops",
+      "jobType": "Internship",
+      "id": 3
+    },
+    {
+      "company": "Zensar",
+      "jobRole": "Full stack developer",
+      "email": "\"t.das@zensar.com\"",
+      "expRequired": "2",
+      "skills": "Full stack java",
+      "educationalQualifications": "MCA",
+      "jobDescription": "Excellent knowledge on java",
+      "jobType": "Internship",
+      "id": 4
+    },
+    {
+      "company": "PWC",
+      "jobRole": "Linux Administrator",
+      "email": "pwc@gmail.com",
+      "expRequired": "2",
+      "skills": "linux,devops,jira",
+      "educationalQualifications": "preferred btech in cse with no backlogs",
+      "jobDescription": "linux administration",
+      "jobType": "Internship",
+      "id": 5
+    },
+    {
+      "company": "PWC",
+      "jobRole": "front end dev",
+      "email": "pwc@gmail.com",
+      "expRequired": "1",
+      "skills": "js,css,html,angular",
+      "educationalQualifications": "preffered btech",
+      "jobDescription": "front end dev",
+      "jobType": "Full-Time",
+      "id": 7
+    },
+    {
+      "company": "TCS",
+      "jobRole": "Manager operations",
+      "email": "tcs@careers.gmail.com",
+      "expRequired": "4",
+      "skills": "MBA operation",
+      "educationalQualifications": "MBA",
+      "jobDescription": "Operation manager",
+      "jobType": "Full-Time",
+      "id": 8
+    },
+    {
+      "company": "HCL",
+      "jobRole": "Java developer",
+      "email": "hcl@outlook.com",
+      "expRequired": "2",
+      "skills": "java,advanced java",
+      "educationalQualifications": "Btech,bca,mca,mtech",
+      "jobDescription": "Sound knowledge in java and advanced java ",
+      "jobType": "Full-Time",
+      "id": 9
+    },
+    {
+      "company": "Tech Mahindra",
+      "salary": "10LPA",
+      "location": "Gurgaon",
+      "jobRole": "Sr.dev java",
+      "email": "techmahindra@gmail.com",
+      "expRequired": "5",
+      "skills": "Java,j2ee",
+      "educationalQualifications": "Preffered Mtech",
+      "jobDescription": "Senior java developer with more than 4 years exp",
+      "jobType": "Full-Time",
+      "id": 10
+    }
+  ],
+  "appliedjobs": [
+    {
+      "name": "Sunil Sharma",
+      "email": "vcd@gmail.com",
+      "company": "PWC",
+      "username": "ST5673",
+      "skills": "Java,css,html",
+      "cv": "C:\\fakepath\\javanotes.zip",
+      "id": 5
+    },
+    {
+      "name": "Tania Deb",
+      "email": "trisha.uemkcse@gmail.com",
+      "company": "PWC",
+      "username": "Td66842",
+      "skills": "Devops",
+      "cv": "C:\\fakepath\\Core+Java+Presentations.zip",
+      "id": 7
+    },
+    {
+      "name": "Sahid Tasnim",
+      "email": "manat@gmail.com",
+      "company": "PWC",
+      "username": "",
+      "skills": "Java,html,css,vuejs,reactjs,linux",
+      "cv": "C:\\fakepath\\Core+Java+Presentations.zip",
+      "id": 9
+    },
+    {
+      "name": "Sahid Tasnim",
+      "email": "manat@gmail.com",
+      "company": "PWC",
+      "username": "Tm789",
+      "skills": "Js",
+      "cv": "C:\\fakepath\\javanotes.zip",
+      "id": 10
+    },
+    {
+      "name": "Sunil Ray",
+      "email": "sunil@gmail.com",
+      "company": "HCL",
+      "username": "Sunil123",
+      "skills": "Java,j2ee",
+      "cv": "C:\\fakepath\\trisha (2).zip",
+      "id": 11
+    },
+    {
+      "name": "Sahid Tasnim",
+      "email": "manat@gmail.com",
+      "company": "Zensar",
+      "role": "Full stack developer",
+      "username": "Tm789",
+      "skills": "Full stack",
+      "cv": "C:\\fakepath\\apache-maven-3.8.6-bin.zip",
+      "id": 13
+    },
+    {
+      "name": "Trisha Das",
+      "email": "td@gmail.com",
+      "company": "PWC",
+      "role": "front end dev",
+      "username": "Td66845",
+      "skills": "Angular.js,bootstrap,css,html",
+      "cv": "C:\\fakepath\\apache-tomcat-9.0.68-windows-x64.zip",
+      "id": 14
+    }
+  ],
+  "job5": [
+    {
+      "name": "Tania Deb",
+      "user": "Td66842",
+      "reject": "Not matched skills",
+      "company": "PWC",
+      "id": 1
+    },
+    {
+      "name": "Sunil Ray",
+      "user": "Sunil123",
+      "reject": "Not matched skills",
+      "company": "TDZensar",
+      "id": 2
+    },
+    {
+      "name": "Sahid Tasnim",
+      "user": "Tm789",
+      "reject": "Not appropriate skills and duplicate application",
+      "company": "PWC",
+      "id": 3
+    }
+  ],
+  "screening": [
+    {
+      "name": "Sahid Tasnim",
+      "user": "Tm789",
+      "screening": "Application needed for further screening",
+      "company": "PWC",
+      "id": 1
+    }
+  ],
+  "shorlist": [
+    {
+      "company": "PWC",
+      "name": "Trisha Das",
+      "user": "Td66845",
+      "email": "t.das@gmail.com",
+      "date": "2022-10-20",
+      "venue": "PWC main campus",
+      "id": 1
+    },
+    {
+      "company": "PWC",
+      "name": "Sunil Sharma",
+      "user": "ST5673",
+      "email": "vcd@gmail.com",
+      "date": "2022-10-17",
+      "venue": "PWC kolkata campus",
+      "id": 2
+    },
+    {
+      "company": "HCL",
+      "name": "Sunil Ray",
+      "user": "Sunil123",
+      "email": "sunil@gmail.com",
+      "date": "2022-10-21",
+      "venue": "HCL technologies bangalore (DLF Block)",
+      "id": 3
+    }
+  ],
+  "panel": [
+    {
+      "company": "PWC",
+      "name": "Trisha Das",
+      "user": "Td66845",
+      "email": "t.das@gmail.com",
+      "date": "2022-11-05",
+      "venue": "PWC MAIN CAMPUS(reporting-9:30am)",
+      "id": 1
+    },
+    {
+      "company": "HCL",
+      "name": "Sunil Ray",
+      "user": "Sunil123",
+      "email": "sunil@gmail.com",
+      "date": "2022-11-08",
+      "venue": "HCL Tech(reporting:8:30am)",
+      "id": 2
+    },
+    {
+      "company": "PWC",
+      "name": "Sunil Sharma",
+      "user": "ST5673",
+      "email": "vcd@gmail.com",
+      "date": "2022-11-28",
+      "venue": "PWC hyderabad",
+      "id": 4
+    }
+  ],
+  "bcv": [
+    {
+      "name": "Sunil",
+      "user": "Sunil123",
+      "company": "HCL",
+      "message": "Congratulations,you are selected.Please come for backgroung verification",
+      "id": 1
+    },
+    {
+      "name": "Trisha",
+      "user": "Td66845",
+      "company": "PWC",
+      "message": "Please come for background verification",
+      "id": 2
+    },
+    {
+      "name": "Sunil Sharma",
+      "user": "ST5673",
+      "company": "PWC",
+      "message": "Please come for background verification",
+      "id": 3
+    }
+  ],
+  "bcv2": [
+    {
+      "name": "Sunil Ray",
+      "email": "sunil@gmail.com",
+      "company": "HCL",
+      "username": "Sunil123",
+      "grad": "Bengal Institute of engineering",
+      "cv": "C:\\fakepath\\trisha (2).zip",
+      "cv1": "C:\\fakepath\\trisha.zip",
+      "id": 1
+    },
+    {
+      "name": "Sunil Sharma",
+      "email": "vcd@gmail.com",
+      "company": "PWC",
+      "username": "ST5673",
+      "grad": "Tech Academy",
+      "cv": "C:\\fakepath\\apache-maven-3.8.6-bin.zip",
+      "cv1": "C:\\fakepath\\apache-tomcat-9.0.68-windows-x64.zip",
+      "id": 2
+    }
+  ],
+  "onboard": [
+    {
+      "company": "HCL",
+      "name": "Sunil Ray",
+      "user": "Sunil123",
+      "verification": "Verification Completed",
+      "date": "2022-11-24",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

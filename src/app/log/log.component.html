@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark success-color rounded">
+      <!-- Brand -->
+      <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+        id="logo"><B>HIREMEE</B></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a routerLink="/post1" class="nav-link p-3"> <i class="fa fa-briefcase"></i> Dashboard</a>
+        </li>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                
+              </a>
+            
+            </div>
+    
+        <li class="nav-item">
+          <a  style="cursor: pointer;" class="nav-link p-3"routerLink="/header"> <i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+<div class="row d-flex justify-content-center align-items-center h-100"style="background-colour:#eee">
+
+<div class="card" style="width:400px">
+    <h1 class="card-header">Admin Login</h1>
+    <div class="card-body">
+    <form [formGroup]="loginForm">
+    <div class="form-group">
+        <div class="alert alert-danger"*ngIf="IsAuthenticationFailed">
+            Invalid user
+        </div>
+        <label for="UserName">UserName:</label>
+        <input class="form-control"
+        [ngClass]="{'is-valid':loginForm.controls.UserName.valid,'is-invalid':loginForm.controls.UserName.invalid}"
+        formControlName="UserName"type="text"name="UserName">
+        <div class="alert alert-danger" [hidden]="!(loginForm.controls.UserName.dirty && loginForm.controls.UserName.errors?.['required'])">
+            Enter User Name
+        </div>
+        <div class="alert alert-danger" [hidden]="!(loginForm.controls.UserName.dirty && loginForm.controls.UserName.errors?.['required'])">
+            Minimum 6 characters
+    </div>
+</div>
+<div class="form-group">
+    <label for="Password">Password:</label>
+    <input class="form-control"
+    [ngClass]="{'is-valid':loginForm.controls.Password.valid,'is-invalid':loginForm.controls.Password.invalid}"
+    formControlName="Password"type="password"name="Password">
+    <div class="alert alert-danger" [hidden]="!(loginForm.controls.Password.dirty && loginForm.controls.Password.errors?.['required'])">
+        Enter Password
+    </div>
+    <div class="alert alert-danger" [hidden]="!(loginForm.controls.Password.dirty && loginForm.controls.Password.errors?.['required'])">
+        Minimum 6 characters
+</div>
+</div>
+<input type="button" class="btn btn-success"value="Login"[disabled]="loginForm.invalid"(click)="login()">
+</form>
+</div>
+</div>
+</div>
+

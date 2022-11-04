@@ -1,0 +1,81 @@
+<div class="container-fluid">
+    <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark success-color rounded">
+      <!-- Brand -->
+      <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+        id="logo"><B>HIREMEE</B></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a routerLink="/dash" class="nav-link p-3"> <i class="fa fa-briefcase"></i> Dashboard</a>
+        </li>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                {{username2}}
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" routerLink="/rec"> Profile</a></li>
+                <li><a class="dropdown-item" routerLink="/post">POst Jobs</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </div>
+    
+        <li class="nav-item">
+          <a  style="cursor: pointer;" class="nav-link p-3"routerLink="/dash"> <i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 10px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Edit your account Recruiter</h2>
+
+              <form [formGroup]="form"*ngFor="let data of profileinfo">
+
+                <div class="form-outline mb-3"*ngFor="let data of profileinfo">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg"formControlName="company"placeholder="{{data.company}}" />
+                  <label class="form-label" for="form3Example1cg">Company Name</label>
+                </div>
+                <div class="form-outline mb-3">
+                  <input type="password" id="form3Example1cg" class="form-control form-control-lg"formControlName="password" />
+                  <label class="form-label" for="form3Example1cg">Password</label>
+                </div>
+
+
+                <div class="form-outline mb-3">
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg"formControlName="email" />
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example4cg" class="form-control form-control-lg"formControlName="job" />
+                  <label class="form-label" for="form3Example4cg">Job Description</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="number" id="form3Example4cdg" class="form-control form-control-lg"formControlName="exp" />
+                  <label class="form-label" for="form3Example4cdg">No.of experience requited</label>
+                </div>
+
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-success "(click)="onEdit(data)">Show</button>
+                    <button type="button"
+                    class="btn btn-primary "(click)="Update()">Update</button>
+
+                </div>
+
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

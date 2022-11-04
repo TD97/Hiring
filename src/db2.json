@@ -1,0 +1,18 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "recreg":[
+      {"company":"Trisha","email":"Das","job":"asd@gmail.com","exp":"987556324"}
+    ],
+    "recsign":[
+        {"firstName":"Trisha","lastname":"Das","email":"asd@gmail.com","phone":"987556324"}
+
+    ],
+    "profile": { "name": "typicode" },
+    "signup":[]
+  }
+  

@@ -1,0 +1,103 @@
+#logo
+{
+    letter-spacing: 1pt;
+    font-weight: 800;
+    padding: 5px;
+    line-height: 5px;
+}
+#logobrand{
+    width: 5%;
+    
+}
+.nav-link:hover{
+     border-left: 5px solid pink; 
+    /* animation-name: slowborder;
+    animation-timing-function: ease;
+    animation-duration: 1s; */
+   
+}
+.nav-link:active{
+   color: black;
+}
+@keyframes slowborder {
+    0% { background-color: orange;opacity: 0.2;}
+    25%{background-color: orange;opacity: 0.4;}
+    50% {background-color: orange;opacity: 0.6;}
+    75% {background-color: orange;opacity: 0.8;}
+    100%{background-color:  orange;opacity: 1;}
+  }
+.dropdown-item:hover{
+    
+    border-left: 5px solid orange;
+}
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    background-color: #D32F2F;
+    font-family: 'Calibri', sans-serif !important
+}
+
+.mt-100 {
+    margin-top: 100px
+}
+
+.container {
+    margin-top: 200px
+}
+
+.card {
+    position: relative;
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+    box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+}
+
+.card .card-body {
+    padding: 1rem 1rem
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+p {
+    font-size: 14px
+}
+
+h4 {
+    margin-top: 18px
+}
+
+.cross {
+    padding: 10px;
+    color: #d6312d;
+    cursor: pointer
+}
+
+.continue:focus {
+    outline: none
+}
+
+.continue {
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 13px;
+    padding: 8px 19px; 
+    cursor: pointer;
+    color: #fff;
+    background-color: #D50000
+}
+
+.continue:hover {
+    background-color: #D32F2F !important
+}

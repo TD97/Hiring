@@ -1,0 +1,103 @@
+<div class="container-fluid">
+  <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark success-color rounded">
+    <!-- Brand -->
+    <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+      id="logo"><B>HIREMEE</B></a>
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a routerLink="/dash" class="nav-link p-3"> <i class="fa fa-briefcase"></i> Dashboard</a>
+      </li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              {{username2}}
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" routerLink="/rec"> Profile</a></li>
+              <li><a class="dropdown-item" routerLink="/post">POst Jobs</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+            </ul>
+          </div>
+  
+      <li class="nav-item">
+        <a  style="cursor: pointer;" class="nav-link p-3"routerLink="/dash"> <i class="fa fa-sign-out"></i> Logout</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+
+<h1>Welcome{{username2}}</h1>
+  <div class="col-md-12">
+    <form class="form-horizontal" [formGroup]="postjob" >
+        <div class=" form-group">
+            <label for="company" class="col-sm-3 control-label"><b>Company</b></label>
+            <input type="text" name="company" id="jobrole" formControlName="company" class="form-control" placeholder="Company">
+        </div>
+        <div class=" form-group">
+          <label for="company" class="col-sm-3 control-label"><b>Salry</b></label>
+          <input type="text" name="company" id="jobrole" formControlName="salary" class="form-control" placeholder="Salary">
+      </div>
+      <div class=" form-group">
+        <label for="company" class="col-sm-3 control-label"><b>Job Location</b></label>
+        <input type="text" name="company" id="jobrole" formControlName="location" class="form-control" placeholder="Location">
+    </div>
+
+
+        <div class=" form-group">
+            <label for="jobrole" class="col-sm-3 control-label"><b>JobRole</b></label>
+            <input type="text" name="jobrole" id="jobrole" formControlName="jobRole" class="form-control" placeholder="JOBROLE">
+        </div>
+        <div class=" form-group">
+          <label for="email" class="col-sm-3 control-label"><b>Email</b></label>
+          <input type="email" name="jobrole" id="jobrole" formControlName="email" class="form-control" placeholder="Email">
+      </div>
+
+        <div class=" form-group">
+            <label for="expRequired" class="col-sm-3 control-label"><b>Experience</b></label>
+            <input type="text" name="expRequired" id="expRequired" formControlName="expRequired" class="form-control" placeholder="Exp">
+        </div>
+        <div class=" form-group">
+            <label for="skills" class="col-sm-3 control-label"><b>Skills</b></label>
+            <input type="text" name="skills" id="skills" formControlName="skills" class="form-control" placeholder="Skills">
+        </div>
+        <div class=" form-group">
+            <label for="education" class="col-sm-3 control-label"><b>JobRole</b></label>
+            <input type="text" name="education" id="education" formControlName="educationalQualifications" class="form-control" placeholder="Education">
+        </div>
+        
+        <div class=" form-group">
+          <label for="jobDescription" class="col-sm-3 control-label"><b>Job Description</b></label>
+          <input type="text" name="jobDescription" id="jobDescription" formControlName="jobDescription" class="form-control" placeholder="Description">
+      </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3"><b>JobType</b></label>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label class="radio-inline">
+                            <input type="radio" id="internship" name="jobType" value="Internship" formControlName="jobType">Internship
+                        </label>
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="radio-inline">
+                            <input type="radio" checked id="permanent" name="jobType" formControlName="jobType" value="Full-Time">Full Time
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success form-control"(click)="jobpost()" ><strong>Post Job</strong></button>
+        </div>
+    </form>
+</div>
+
+  

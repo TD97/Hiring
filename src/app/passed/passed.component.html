@@ -1,0 +1,112 @@
+<div class="container-fluid">
+    <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark danger-color rounded">
+      <!-- Brand -->
+      <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+        id="logo"><B>HIREMEE</B></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a routerLink="/dash" class="nav-link p-3"> <i class="fa fa-briefcase"></i> Dashboard</a>
+        </li>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                {{username2}}
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" routerLink="/rec">Profile</a></li>
+                <li><a class="dropdown-item" routerLink="/post">POst Jobs</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </div>
+    
+        <li class="nav-item">
+          <a  style="cursor: pointer;" class="nav-link p-3"routerLink="/dash" > <i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Status</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of profileinfo">
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">{{data.name}}</p>
+              <p class="text-muted mb-0">{{data.email}}</p>
+            </div>
+          </div>
+        </td>
+        <td >
+          <p class="fw-normal mb-1">{{data.user}}</p>
+        </td>
+        <td>
+          <span class="badge badge-success rounded-pill d-inline"id="p1">Active</span>
+        </td>
+        <td>{{data.date}}</td>
+        <td>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+            Initiate Reference check
+          </button>
+          <button type="button"class="btn btn-danger"(click)="deleteP(data)">Cancel</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formval">
+  
+                <div class="mb-3">
+                  <label for="firstName" class="form-label"> Name</label>
+                  <input type="text" formControlName="name"class="form-control" id="firstName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="lastname" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="lastname"formControlName="user">
+                </div>
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="lastname"formControlName="company">
+                  </div>
+  
+                  <div class="mb-3">
+                    <label for="Message" class="form-label">Message</label>
+                    <input type="textarea" class="form-control" id="refcheck"formControlName="message">
+                  </div>
+  
+  
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"(click)="postCandidateDetails()">Refcheck</button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>

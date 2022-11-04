@@ -1,0 +1,168 @@
+<div class="container-fluid">
+    <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark danger-color rounded">
+      <!-- Brand -->
+      <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+        id="logo"><B>HIREMEE</B></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a routerLink="/post1" class="nav-link p-3"> <i class="fa fa-briefcase"></i> Dashboard</a>
+        </li>
+        <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle p-3"  id="navbardrop" data-toggle="dropdown" style="cursor: pointer;">
+             <i class="fa fa-building">{{username1}}</i>
+            </a>
+            </li>-->
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                {{user2}}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" routerLink="/emp">Profile</a></li>
+                <li><a class="dropdown-item" routerLink="/applied">Applied jobs</a></li>
+                <li><a class="dropdown-item" routerLink="/int">Application Status</a></li>
+                <li><a class="dropdown-item"routerLink="/fur" >Further process</a></li>
+                <li><a class="dropdown-item"routerLink="/hire" >Hiring status</a></li>
+
+
+
+                
+
+              </ul>
+
+            
+            </div>
+    
+        <li class="nav-item">
+          <a  style="cursor: pointer;" class="nav-link p-3" routerLink="/post1"> <i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a routerLink="/login/emp_login" class="nav-link p-3" > <i class="fa fa-lock"></i> LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/register/emp_register" class="nav-link p-3 " ><i class="fa fa-address-book" aria-hidden="true"></i>REGISTER</a>
+          </li> -->
+        <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle p-3"  id="navbardrop" data-toggle="dropdown" style="cursor: pointer;">
+              <i class="fa fa-user"></i>Hi, {{username}}
+            </a>
+            <div class="dropdown-menu dropdown-menu-right bg-light">
+              <a class="dropdown-item p-2" (click)="gotoprofilepage()" style="cursor: pointer;">Profile</a>
+              <a class="dropdown-item p-2" (click)="logoutemployee()" style="cursor: pointer;">LOGOUT</a>
+            </div>
+          </li> -->
+      </ul>
+    </nav>
+  </div>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Panel Interview</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Reference Check</button>
+    </li>
+    <!--<li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Rejected Application</button>
+    </li>-->
+
+
+  </ul>
+  
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div *ngIf="profileinfo">
+            <div class="card text-center"style="width:800px">
+            <div class="col-sm-12">
+                <label for="username"><b>UserName:</b></label><br>
+                <input type="text" name="username" id="username" class="form-control" value={{user2}}
+                  disabled>
+              </div>
+    
+          <div class="col-sm-12" *ngFor="let data of profileinfo;let i=index">
+            <div class="card-body"style="background-color:pink;">
+
+            <label for="mobile"><span>{{i+1}}.<b>Interview date</b></span></label><br>
+            <input type="date" name="date" id="date" class="form-control" value={{data.date}} disabled>
+            <label for="interview"><b>Interview venue</b></label><br>
+            <input type="text" name="venue" id="venue" class="form-control" value={{data.venue}} disabled>
+            <label for="interview"><b>Company</b></label><br>
+            <input type="text" name="venue" id="venue" class="form-control" value={{data.company}} disabled>
+          </div>
+          <div class="card-footer ">
+          
+          </div>
+          </div>
+          
+          <!-- <div class="col-sm-12">
+            <label for="password"><b>Password:</b></label><br>
+            <input type="password" name="password" id="password" class="form-control" value={{profileinfo.password}}
+              disabled>
+          </div> -->
+         <!-- <div class="col-sm-12" *ngFor="let data of profileinfo">
+
+            <label for="interview"><b>Interview venue</b></label><br>
+            <input type="text" name="venue" id="venue" class="form-control" value={{data.venue}} disabled>
+          </div>-->
+         <!-- <div class="col-sm-12" *ngFor="let data of profileinfo">
+
+            <label for="interview"><b>Company</b></label><br>
+            <input type="text" name="venue" id="venue" class="form-control" value={{data.company}} disabled>
+          </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    </div>
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div *ngIf="profileinfo1">
+          <div class="col-sm-12">
+              <label for="username"><b>UserName:</b></label><br>
+              <input type="text" name="username" id="username" class="form-control" value={{user2}}
+                disabled>
+            </div>
+  
+        <div class="col-sm-12" *ngFor="let data1 of profileinfo1">
+
+          <label for="mobile"><b>Company</b></label><br>
+          <input type="text" name="date" id="date1" class="form-control" value={{data1.company}} disabled>
+          <label for="interview"><b>Message from Recruiter</b></label><br>
+          <input type="text" name="venue" id="venue1" class="form-control" value={{data1.message}} disabled>
+          <button class="btn btn-success"routerLink="/ref">Fiil up your details</button>
+        
+        </div>
+        <!-- <div class="col-sm-12">
+          <label for="password"><b>Password:</b></label><br>
+          <input type="password" name="password" id="password" class="form-control" value={{profileinfo.password}}
+            disabled>
+        </div> -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+  </div>
+
+

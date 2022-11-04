@@ -1,0 +1,222 @@
+{
+  "post":  [
+        {
+          "id": 1,
+          "firstName": "Trisha",
+          "lastname": "Das",
+          "email": "Trisha.uemkcse@gmail.com",
+          "phone": 9432157068
+        },
+        {
+          "id": 2,
+          "firstName": "Anish",
+          "lastname": "Das",
+          "email": "anish@gmail.com",
+          "phone": 9878866
+        },
+        {
+          "id": 3,
+          "firstName": "Rahul",
+          "lastname": "Bose",
+          "email": "fgfjg@gmail.com",
+          "phone": 78654454678
+        }
+    ],
+   "comments" [
+        {
+          "company": "TDZensar",
+          "password": "zensar",
+          "email": "t.das@zensar.com",
+          "job": "java dev",
+          "exp": 2,
+          "id": 1
+        },
+        {
+          "company": "TDZensar",
+          "password": "fghh",
+          "email": "t.das@zensar.com",
+          "job": "fsd",
+          "exp": 1,
+          "id": 2
+        },
+        {
+          "company": "zens",
+          "password": "bultu",
+          "email": "t.das@zensar.com",
+          "job": "full stack java",
+          "exp": 2,
+          "id": 3
+        },
+        {
+          "company": "HCL",
+          "password": "HCL1234",
+          "email": "hcl@outlook.com",
+          "job": "Junior dev",
+          "exp": 2,
+          "id": 4
+        },
+        {
+          "company": "Zensar Technologies Ltd",
+          "password": "zensar",
+          "email": "t.das@zensar.com",
+          "job": ".net dev",
+          "exp": 4,
+          "id": 5
+        }
+      ],
+      "signup":[
+        {
+          "username": "Td66845",
+          "password": "bultu12345",
+          "mail": "t.das@zensar.com",
+          "gender": "Female",
+          "mobile": "9875525201",
+          "hometown": "kolkata",
+          "interests": [
+            "IOT"
+          ],
+          "experience": 1,
+          "maritalStatus": "Single",
+          "nationality": "indian",
+          "languages": "bengali",
+          "currentLocation": "kolkata",
+          "lastjobexp": 1,
+          "lastjobDesig": "jr engineer",
+          "department": "IT",
+          "reasonsforleaving": "",
+          "id": 1
+        },
+        {
+          "username": "ST5673",
+          "password": "bultu2",
+          "mail": "vcd@gmail.com",
+          "gender": "Male",
+          "mobile": "6291010883",
+          "hometown": "Bankura",
+          "interests": [
+            "ML"
+          ],
+          "experience": 3,
+          "maritalStatus": "Single",
+          "nationality": "Indian",
+          "languages": "Hindi",
+          "currentLocation": "Kolkata",
+          "lastjobexp": 1,
+          "lastjobDesig": "Sr.dev",
+          "department": "Service",
+          "reasonsforleaving": "",
+          "id": 2
+        },
+        {
+          "username": "Td66842",
+          "password": "Bultu",
+          "mail": "Trisha.uemkcse@gmail.com",
+          "gender": "Male",
+          "mobile": "6291010887",
+          "hometown": "kolkata",
+          "interests": [
+            "ML"
+          ],
+          "experience": 3,
+          "maritalStatus": "Married",
+          "nationality": "indian",
+          "languages": "bengali",
+          "currentLocation": "Kolkata",
+          "lastjobexp": 1,
+          "lastjobDesig": "Sr.dev",
+          "department": "Others",
+          "reasonsforleaving": "",
+          "id": 3
+        },
+        {
+          "username": "Trisha",
+          "password": "Bultu",
+          "mail": "bhfs@gmail.com",
+          "gender": "Female",
+          "mobile": "9875549254",
+          "hometown": "Kolkata",
+          "interests": [
+            "AI"
+          ],
+          "experience": 1,
+          "maritalStatus": "Single",
+          "nationality": "indian",
+          "languages": "bengali",
+          "currentLocation": "Kolkata",
+          "lastjobexp": 1,
+          "lastjobDesig": "jr engineer",
+          "department": "Service",
+          "reasonsforleaving": "",
+          "id": 4
+        },
+        {
+          "username": "Tm789",
+          "password": "Bultuop",
+          "mail": "manat@gmail.com",
+          "gender": "Male",
+          "mobile": "987098867",
+          "hometown": "kolkata",
+          "interests": [
+            "IOT"
+          ],
+          "experience": 2,
+          "maritalStatus": "Single",
+          "nationality": "indian",
+          "languages": "bengali",
+          "currentLocation": "kolkata",
+          "lastjobexp": 4,
+          "lastjobDesig": "jr engineer",
+          "department": "Others",
+          "reasonsforleaving": "",
+          "id": 5
+        },
+        {
+          "username": "Sunil123",
+          "password": "sunil1234",
+          "mail": "sunil@gmail.com",
+          "gender": "Female",
+          "mobile": "98089765545",
+          "hometown": "Kolkata",
+          "interests": [
+            "IOT"
+          ],
+          "experience": 3,
+          "maritalStatus": "Single",
+          "nationality": "indian",
+          "languages": "Hindi",
+          "currentLocation": "kolkata",
+          "lastjobexp": 3,
+          "lastjobDesig": "jr engineer",
+          "department": "Others",
+          "reasonsforleaving": "",
+          "id": 6
+        }
+      ],
+      "login":[],
+      "jobpost":[
+        {
+          "jobRole": "jr.dev",
+          "expRequired": "2",
+          "skills": "java,html",
+          "educationalQualifications": "btech",
+          "jobDescription": "no backlog",
+          "jobType": "Full-Time",
+          "id": 1
+        },
+        {
+          "company": "Zensar",
+          "jobRole": "Full stack developer",
+          "expRequired": "0",
+          "skills": "Full stack java",
+          "educationalQualifications": "Developer",
+          "jobDescription": "Excellent knowledge on java",
+          "jobType": "Full-Time",
+          "id": 2
+        }
+      ],
+      "appliedjobs":[],
+      "profile":[],
+      "job1":[],
+      "job2":[]
+
+}

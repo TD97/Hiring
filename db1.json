@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "firstName": "Trisha",
+      "lastname": "Das",
+      "email": "Trisha.uemkcse@gmail.com",
+      "phone": 9875525201
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
